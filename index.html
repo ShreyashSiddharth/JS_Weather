@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      body {
+      background-image: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=1060&t=st=1688916463~exp=1688917063~hmac=c3e4c817982c9a3bf6ac340e858551790b972b4c0f869fa98bb45bfcc64deab0');
+      background-color: #cccccc;
+      backdrop-filter: blur(5px);
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+color: white;
+align-items: center;
+}
+.container:{
+  align-items: center;
+}
+
+  </style>
   </head>
   <body>
  
@@ -63,7 +84,7 @@
                       <li>Maximum Temprature is <span id ="max_temp"></span></li>
                      
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
                   </div>
                 </div>
               </div>
@@ -79,7 +100,7 @@
                       <li>Feels Like <span id ="feels_like"></span></li>
                       <li>Humidity is <span id ="humidity"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
                   </div>
                 </div>
               </div>
@@ -95,97 +116,16 @@
                       <li>Sunset <span id ="sunset"></span></li>
                       <li>Sunrise <span id ="sunrise"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                  
                   </div>
                 </div>
               </div>
             </div>
         
-            <h2 class="display-6 text-center mb-4">Other Weathers</h2>
+
         
             <div class="table-responsive">
-              <table class="table text-center">
-                <thead>
-                  <tr>
-                    <th style="width: 6%;"></th>
-                    <th style="width: 6%;">cloud_pct</th>
-                    <th style="width: 6%;">feels_like</th>
-                    <th style="width: 6%;">humidity</th>
-                    <th style="width: 6%;">max_temp</th>
-                    <th style="width: 6%;">min_temp</th>
-                    <th style="width: 6%;">sunrise</th>
-                    <th style="width: 6%;">sunset</th>
-                    <th style="width: 6%;">Temp</th>
-                    <th style="width: 6%;">Wind_Degree</th>
-                    <th style="width: 6%;">Wind_Speed</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" class="text-start">Shanghai</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>1</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>2</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>3</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>4</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>5</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>6</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>7</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>8</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>9</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>0</td>
-                    
-
-                  </tr>
-                  <tr>
-                    <th scope="row" class="text-start">Boston</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>1</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>2</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>3</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>4</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>5</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>6</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>7</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>8</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>9</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>0</td>
-
-                  </tr>
-                </tbody>
-        
-                <tbody>
-                  <tr>
-                    <th scope="row" class="text-start">Lucknow</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>1</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>2</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>3</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>4</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>5</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>6</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>7</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>8</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>9</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>0</td>
-                  
-
-                  </tr>
-                  <tr>
-                    <th scope="row" class="text-start">Kolkata</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>1</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>2</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>3</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>4</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>5</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>6</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>7</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>8</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>9</td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>0</td>
-               
-                  </tr>
-               
-                
-                </tbody>
-              </table>
+              
             </div>
           </main>
 

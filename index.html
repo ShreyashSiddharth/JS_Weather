@@ -38,14 +38,14 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input id = "city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id = "submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
 
-      <h1 class = " my-4 text-center ">Weather For Seattle</h1>
+      <h1 class = " my-4 text-center ">Weather For <span id = "cityName"></span></h1>
       <div class="container">
 
         <main>
@@ -53,15 +53,15 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Tempratures</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <h1 class="card-title pricing-card-title"><span id="tinfo"></span><small class="text-body-secondary fw-light">°C</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>Temprature is <span id ="temp"></span></li>
+                      <li>Minimum Temprature<span id ="min_temp"></span></li>
+                      <li>Maximum Temprature is <span id ="max_temp"></span></li>
+                     
                     </ul>
                     <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                   </div>
@@ -70,15 +70,14 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Humidity Info</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <h1 class="card-title pricing-card-title" ><span id = "hinfo"></span><small class="text-body-secondary fw-light">%</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>Wind Degree is <span id ="wind_degree"></span></li>
+                      <li>Feels Like <span id ="feels_like"></span></li>
+                      <li>Humidity is <span id ="humidity"></span></li>
                     </ul>
                     <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                   </div>
@@ -87,15 +86,14 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div class="card-header py-3 text-bg-primary border-primary">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Wind Info</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <h1 class="card-title pricing-card-title"><span id="winfo"></span><small class="text-body-secondary fw-light">km/hr</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>Wind Speed is <span id ="wind_speed"></span></li>
+                      <li>Sunset <span id ="sunset"></span></li>
+                      <li>Sunrise <span id ="sunrise"></span></li>
                     </ul>
                     <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                   </div>
@@ -110,16 +108,16 @@
                 <thead>
                   <tr>
                     <th style="width: 6%;"></th>
-                    <th style="width: 6%;">cloud pct</th>
-                    <th style="width: 6%;">feels like</th>
+                    <th style="width: 6%;">cloud_pct</th>
+                    <th style="width: 6%;">feels_like</th>
                     <th style="width: 6%;">humidity</th>
-                    <th style="width: 6%;">max temp</th>
-                    <th style="width: 6%;">min temp</th>
+                    <th style="width: 6%;">max_temp</th>
+                    <th style="width: 6%;">min_temp</th>
                     <th style="width: 6%;">sunrise</th>
                     <th style="width: 6%;">sunset</th>
                     <th style="width: 6%;">Temp</th>
-                    <th style="width: 6%;">Wind Degree</th>
-                    <th style="width: 6%;">Wind Speed</th>
+                    <th style="width: 6%;">Wind_Degree</th>
+                    <th style="width: 6%;">Wind_Speed</th>
                   </tr>
                 </thead>
                 <tbody>
